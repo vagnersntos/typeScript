@@ -43,12 +43,24 @@
 //     console.log(novoNum)
 //     novoNum--
 // }while(novoNum >= 0);
-var nomes = ["Ana", "Joana", "Carlos", "amanda", "Ariana"];
-var newNomes = [];
-for (var _i = 0, nomes_1 = nomes; _i < nomes_1.length; _i++) {
-    var nome = nomes_1[_i];
-    if (nome[0] === "A" || nome[0] === "a") {
-        newNomes.push(nome);
-    }
+/*
+Atividade 01
+const numbers:Array<number> = [8,9,3,4,7];
+let soma:number = 0;
+
+for(let indice in numbers){
+    soma += numbers[indice];
+    console.log("Indice: " + indice + "number : " + numbers[indice] + "\n");
+    console.log("Resultado Parcial: " + soma + "\n");
 }
-console.log(newNomes);
+console.log("Resultado Total: " + soma);*/
+var numbers = [8, 9, 3, 4, 7];
+var soma = 0;
+var indice = 0;
+while (indice < numbers.length) {
+    soma += numbers[indice];
+    indice++;
+    console.log("Indice: " + indice + " number: " + numbers[indice] + "\n");
+    console.log("Resultado Parcial: " + soma + "\n");
+}
+console.log("Resultado Total: " + soma);

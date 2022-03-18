@@ -51,5 +51,27 @@
 //     console.log(novoNum)
 //     novoNum--
 // }while(novoNum >= 0);
-[8,9,3,4,7]
+/*
+Atividade 01
+const numbers:Array<number> = [8,9,3,4,7];
+let soma:number = 0;
+
+for(let indice in numbers){
+    soma += numbers[indice];
+    console.log("Indice: " + indice + "number : " + numbers[indice] + "\n");
+    console.log("Resultado Parcial: " + soma + "\n");
+}
+console.log("Resultado Total: " + soma);*/
+
+const numbers:Array<number> = [8,9,3,4,7];
+let soma:number = 0;
+let indice:number = 0;
+
+while(indice < numbers.length){
+    soma += numbers[indice];
+    indice++;
+    console.log("Indice: " + indice + " number: " + numbers[indice] + "\n");
+    console.log("Resultado Parcial: " + soma + "\n");
+}
+console.log("Resultado Total: " + soma)
 
