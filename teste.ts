@@ -67,11 +67,19 @@ const numbers:Array<number> = [8,9,3,4,7];
 let soma:number = 0;
 let indice:number = 0;
 
-while(indice < numbers.length){
-    soma += numbers[indice];
-    indice++;
-    console.log("Indice: " + indice + " number: " + numbers[indice] + "\n");
-    console.log("Resultado Parcial: " + soma + "\n");
-}
-console.log("Resultado Total: " + soma)
+// while(indice < numbers.length){
+//     soma += numbers[indice];
+//     indice++;
+//     console.log("Indice: " + indice + " number: " + numbers[indice] + "\n");
+//     console.log("Resultado Parcial: " + soma + "\n");
+// }
+// console.log("Resultado Total: " + soma)
+const nomes:Array<string> = ["Ana", "alice", "Fernanda", "João", "Augusto", "Roberto"];
+let novoArray:Array<string> = [];
 
+for(let nome of nomes){
+    if(nome[0] == "A" || nome[0] == "a"){
+        novoArray.push(nome);
+    }
+}
+console.log(novoArray);
